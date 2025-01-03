@@ -1,0 +1,152 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Bank holidays preview – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        UK bank holidays
+      </h1>
+
+      <div class="govuk-tabs" data-module="govuk-tabs">
+        <h2 class="govuk-tabs__title">
+          Contents
+        </h2>
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#england-wales">
+              England and Wales
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#scotland">
+              Scotland
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#northern-ireland">
+              Northern ireland
+            </a>
+          </li>
+        </ul>
+        <div class="govuk-tabs__panel" id="england-wales">
+          <div class="gem-c-panel govuk-panel govuk-panel--confirmation">
+            <h2 class="govuk-panel__title">
+              <span class="gem-c-panel__prepend">The next bank holiday in England and Wales is</span>
+              <span class="govuk-panel__title-text">18 April</span>
+              <span class="gem-c-panel__append">Good Friday</span>
+            </h2>
+          </div>
+          <h2 class="govuk-heading-l">Upcoming bank holidays in England and Wales</h2>
+          <table class="govuk-table">
+            <caption class="govuk-table__caption">
+<!--              <span class=govuk-visually-hidden">-->
+<!--                ::before-->
+<!--                "Upcoming bank holidays in England and Wales"-->
+<!--                ::after-->
+<!--              </span>-->
+              2025
+            </caption>
+            <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Date</th>
+              <th scope="col" class="govuk-table__header">Day of the week</th>
+              <th scope="col" class="govuk-table__header">Bank holiday</th>
+            </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">18 April</th>
+              <td class="govuk-table__cell">Friday</td>
+              <td class="govuk-table__cell">Good Friday</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">5 May</th>
+              <td class="govuk-table__cell">Monday</td>
+              <td class="govuk-table__cell">Early May bank holiday</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">26 May</th>
+              <td class="govuk-table__cell">Monday</td>
+              <td class="govuk-table__cell">Spring bank holiday</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="scotland">
+          <h3 class="govuk-heading-l">Upcoming bank holidays in Scotland</h3>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Date</th>
+              <th scope="col" class="govuk-table__header">Day of the week</th>
+              <th scope="col" class="govuk-table__header">Bank holiday</th>
+            </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">18 April</th>
+              <td class="govuk-table__cell">Friday</td>
+              <td class="govuk-table__cell">Good Friday</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">5 May</th>
+              <td class="govuk-table__cell">Monday</td>
+              <td class="govuk-table__cell">Early May bank holiday</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">26 May</th>
+              <td class="govuk-table__cell">Monday</td>
+              <td class="govuk-table__cell">Spring bank holiday</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="northern-ireland">
+          <h3 class="govuk-heading-l">Upcoming bank holidays in Northern ireland</h3>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Date</th>
+              <th scope="col" class="govuk-table__header">Day of the week</th>
+              <th scope="col" class="govuk-table__header">Bank holiday</th>
+            </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">17 March</th>
+                <td class="govuk-table__cell">Monday</td>
+                <td class="govuk-table__cell">St Patrick's Day</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">18 April</th>
+                <td class="govuk-table__cell">Friday</td>
+                <td class="govuk-table__cell">Good Friday</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">21 April</th>
+                <td class="govuk-table__cell">Monday</td>
+                <td class="govuk-table__cell">Easter Monday</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}
